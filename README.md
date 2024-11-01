@@ -21,9 +21,9 @@ $$
 $$
 
 Where:
-- \( D_A \) and \( D_B \) are the diffusion rates of chemicals \( A \) and \( B \), respectively.
-- \( f \) (feed) and \( k \) (kill) are parameters that control the rates of feeding and removal of chemicals in the system.
-- The **Laplacian** term \( \nabla^2 \) represents the diffusion process by summing the concentrations of neighboring cells and subtracting the current cell's value.
+- `D_A` and `D_B` are the diffusion rates of chemicals `A` and `B`, respectively.
+- `f` (feed) and `k` (kill) are parameters that control the rates of feeding and removal of chemicals in the system.
+- The Laplacian term (`∇²`) represents the diffusion process by summing the concentrations of neighboring cells and subtracting the current cell's value.
 
 To simulate a continuous surface, this repo implements periodic boundary conditions––for smoother and more continuous patterns.
 
