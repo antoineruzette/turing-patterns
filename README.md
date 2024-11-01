@@ -9,21 +9,21 @@ Turing patterns are a type of pattern formation that can be observed in nature. 
 ## Some mathematics about the RD system
 This implementation models a reaction-diffusion system on a two-dimensional grid. Each cell in the grid contains two chemical species, `A` and `B`. The concentrations of these chemicals evolve over time due to diffusion and non-linear reactions, following Turing's theory of morphogenesis. The model uses the Gray-Scott equations:
 
-For each cell `(x, y)` in the grid, the concentrations of chemicals `A` and `B` are updated using the following equations:
 
-\[
+For each cell \( (x, y) \) in the grid, the concentrations of chemicals \( A \) and \( B \) are updated using the following equations:
+
+$$
 \frac{dA}{dt} = D_A \cdot \nabla^2 A - A B^2 + f (1 - A)
-\]
+$$
 
-\[
+$$
 \frac{dB}{dt} = D_B \cdot \nabla^2 B + A B^2 - (k + f) B
-\]
+$$
 
 Where:
 - \( D_A \) and \( D_B \) are the diffusion rates of chemicals \( A \) and \( B \), respectively.
 - \( f \) (feed) and \( k \) (kill) are parameters that control the rates of feeding and removal of chemicals in the system.
-- The **Laplacian** term (\( \nabla^2 \)) represents the diffusion process by summing the concentrations of neighboring cells and subtracting the current cell's value.
-
+- The **Laplacian** term \( \nabla^2 \) represents the diffusion process by summing the concentrations of neighboring cells and subtracting the current cell's value.
 
 To simulate a continuous surface, this repo implements periodic boundary conditions––for smoother and more continuous patterns.
 
