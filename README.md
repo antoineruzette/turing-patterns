@@ -33,4 +33,5 @@ Initially, the grid is filled with a uniform concentration of $A$ and a very low
 ## Getting started
 1. Clone the repository
 2. Open the project in your favorite IDE, and make sure you have the JDK installed
+3. Compile the code: `javac TuringPatternSimulator.java` in your terminal
 3. Run `java TuringPatternSimulator` in your terminal
