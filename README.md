@@ -10,7 +10,7 @@ Turing patterns are a type of pattern formation that can be observed in nature. 
 This implementation models a reaction-diffusion system on a two-dimensional grid. Each cell in the grid contains two chemical species, `A` and `B`. The concentrations of these chemicals evolve over time due to diffusion and non-linear reactions, following Turing's theory of morphogenesis. The model uses the Gray-Scott equations:
 
 
-For each cell \( (x, y) \) in the grid, the concentrations of chemicals \( A \) and \( B \) are updated using the following equations:
+For each cell $(x, y)$ in the grid, the concentrations of chemicals \( A \) and \( B \) are updated using the following equations:
 
 $$
 \frac{dA}{dt} = D_A \cdot \nabla^2 A - A B^2 + f (1 - A)
