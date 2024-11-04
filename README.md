@@ -1,6 +1,6 @@
 # Turing patterns in java
 
-![Turing patterns](images/turing_pattern.gif)
+![Turing patterns](images/turing_patterns.gif)
 
 ## About Turing patterns
 Turing patterns are a type of pattern formation that can be observed in nature. They are named after the mathematician Alan Turing, who first described them in his 1952 paper "The Chemical Basis of Morphogenesis". The basic idea is that you have two chemicals that diffuse at different rates, and that react with each other in a non-linear way. This can lead to the formation of complex patterns, such as spots, stripes, or spirals. Say you have a grid of cells, each of which contains a concentration of two chemicals. The chemicals diffuse across the grid, and react with each other according to some reaction-diffusion equations. The result is that you get patterns forming in the concentrations of the chemicals.
