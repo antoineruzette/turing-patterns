@@ -61,7 +61,7 @@ public class TuringPattern {
 
                     double nextA = cell.getA() + (diffA * laplaceA - cell.getA() * cell.getB() * cell.getB() + feedRate * (1 - cell.getA()));
                     double nextB = cell.getB() + (diffB * laplaceB + cell.getA() * cell.getB() * cell.getB() - (killRate + feedRate) * cell.getB());
-
+                    
                     nextGrid.getCell(x, y).setA(nextA);
                     nextGrid.getCell(x, y).setB(nextB);
                 }
